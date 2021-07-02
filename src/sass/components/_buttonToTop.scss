@@ -1,0 +1,48 @@
+.buttonToTop {
+  position: fixed;
+  bottom: 44px;
+  right: 9px;
+  z-index: 99;
+  width: 45px;
+  height: 45px;
+
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  color: $accent-color;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  stroke: #fff;
+  display: block;
+
+  transition: background-color 250ms $time-distribution-function,
+    color 250ms $time-distribution-function;
+  @media screen and (min-width: 768px) {
+    right: 26px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+  }
+  @media screen and (min-width: 1280px){
+    right: 100px;
+    bottom: 40px;
+  }
+}
+
+.icon-scrollToTop {
+  font-size: 34px;
+  line-height: 1.2;
+  @media screen and (min-width: 768px){
+    font-size: 42px;
+    line-height: 1;
+  }
+}
+
+.buttonToTop:hover {
+  background-color: $accent-color;
+  color: $secondary-color;
+}
+
+.disable-btn {
+  display: none;
+}

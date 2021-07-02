@@ -1,0 +1,46 @@
+#pagination-container {
+  margin-top: 30px;
+  @media screen and (min-width: 1280px) {
+    margin-top: 70px;
+  }
+}
+
+.paginationjs ul {
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $secondary-color;
+}
+
+.paginationjs-page {
+  cursor: pointer;
+  padding: 5px 12px;
+  color: $secondary-color;
+}
+
+.paginationjs-page:not(:last-child) {
+  margin-right: 5px;
+}
+
+.paginationjs-page.active {
+  color: $accent-color;
+  border: 1px solid $accent-color;
+  border-radius: 10px 0px;
+}
+
+.paginationjs-page:hover {
+  color: $accent-color;
+}
+
+.paginationjs-page a:visited {
+  color: inherit;
+}
+
+.pagination-error {
+  color: $accent-color;
+  text-align: center;
+}

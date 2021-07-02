@@ -1,0 +1,3 @@
+const favEventsId = [];
+
+export { favEventsId };

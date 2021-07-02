@@ -1,0 +1,65 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 60px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 27px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 19px;
+  }
+}
+
+.footer-copyright {
+  font-size: 16px;
+  color: #939393;
+  bottom: 19px;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.footer-students {
+  font-size: 16px;
+  color: #939393;
+  font-weight: 600;
+  text-decoration: underline;
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.footer-heart {
+  display: inline-block;
+  color: red;
+  animation: animateHeart 2.5s infinite;
+
+  @keyframes animateHeart {
+    0% {
+      transform: scale(0.8);
+    }
+    5% {
+      transform: scale(0.9);
+    }
+    10% {
+      transform: scale(0.8);
+    }
+    15% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
+}

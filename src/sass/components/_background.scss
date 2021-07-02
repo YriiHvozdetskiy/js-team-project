@@ -1,0 +1,23 @@
+.pages-bg {
+  background-color: rgb(14, 14, 14);
+  background-image: url('../images/header-img/bg-body-noice/bg-noise.png');
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/header-img/bg-body-noice/decor.png'),
+      url('../images/header-img/bg-body-noice/bg-circle-768.png'),
+      url('../images/header-img/bg-body-noice/bg-noise.png'),
+      url('../images/header-img/bg-body-noice/decor-footer.png');
+
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position: top center, top 364px center, top center, top 2820px center;
+    z-index: 30;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/header-img/bg-body-noice/decor-1280.png'),
+      url('../images/header-img/bg-body-noice/bg-circle-1280.png'),
+      url('../images/header-img/bg-body-noice/bg-noise.png'),
+      url('../images/header-img/bg-body-noice/decor-1280-footer.png');
+    background-position: top center, top 445px center, top center, top 2350px center;
+  }
+}

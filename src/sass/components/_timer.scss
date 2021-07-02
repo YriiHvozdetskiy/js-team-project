@@ -1,0 +1,99 @@
+.timer-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding-bottom: 7px;
+  }
+  @media screen and (min-width: 1280px){
+    padding-left: 19px;
+    justify-content: flex-start;
+  }
+}
+
+.timer-title {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  color: $accent-color;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 7px;
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-top: 20px;
+  @media screen and (min-width: 1280px){
+    margin-left: 50px;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 32px;
+
+  // margin-right: 20px;
+  @media screen and (min-width: 768px) {
+    margin-left: 5px;
+    width: 45px;
+  }
+  @media screen and (min-width: 1280px){
+    width: 80px;
+  }
+}
+
+.field .value {
+border: 2px solid gray;
+border-radius: 5px;
+color: #fff;
+background-color: $modal-secondary-color;
+text-decoration: $accent-color;
+text-align: center;
+
+line-height: 1.15;
+padding: 5px;
+font-size: 11px;
+font-weight: 600;
+
+@media screen and (min-width: 768px) {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1280px){
+  font-size: 40px;
+  font-weight: 700;
+}
+}
+
+.field .label {
+  padding-top: 3px;
+  font-size: 4px;
+  padding-right: 5px;
+  // padding-top: 10px;
+  color: gray;
+  text-transform: uppercase;
+  text-align: center;
+  @media screen and (min-width: 768px){
+    padding-top: 5px;
+    font-size: 9px;
+  }
+}

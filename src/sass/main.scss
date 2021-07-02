@@ -1,0 +1,21 @@
+@import './utils/normalize';
+@import './utils/variables';
+@import './utils/visually-hiden';
+
+@import './base/container';
+@import './components/background';
+@import './components/header';
+@import './components/main';
+@import './components/pagination';
+@import './components/footer';
+@import './components/loader';
+
+@import './components/modal';
+@import './components/modal-team';
+@import './components/events__modal';
+
+@import './components/inputs';
+
+@import './components/pnotify';
+@import './components/timer';
+@import './components/buttonToTop';

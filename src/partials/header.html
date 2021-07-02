@@ -1,0 +1,61 @@
+<header class="header">
+  <div class="logo">
+    <a href="/index.html">
+      <picture>
+        <source
+          srcset="
+            ./images/header-img/logo-mob/logo-own-mob-1x.png 1x,
+            ./images/header-img/logo-mob/logo-own-mob-2x.png 2x,
+            ./images/header-img/logo-mob/logo-own-mob-3x.png 3x
+          "
+          media="(max-width: 767px)"
+        />
+
+        <source
+          srcset="
+            ./images/header-img/logo-desc/logo-own-desc-1x.png 1x,
+            ./images/header-img/logo-desc/logo-own-desc-2x.png 2x,
+            ./images/header-img/logo-desc/logo-own-desc-3x.png 3x
+          "
+          media="(min-width: 1280px)"
+        />
+
+        <source
+          srcset="
+            ./images/header-img/logo-tab/logo-own-tab-1x.png 1x,
+            ./images/header-img/logo-tab/logo-own-tab-2x.png 2x,
+            ./images/header-img/logo-tab/logo-own-tab-3x.png 3x
+          "
+          media="(min-width: 768px)"
+        />
+        <img class="logo-img" src="./images/header-img/logo-mob/logo-own-mob-1x.png" alt="logo" />
+      </picture>
+    </a>
+  </div>
+
+  <button type="button" class="header-favorites-btn" data-events-modal-open>
+    <svg class="btn-favor-icon" width="60" height="60">
+      <use class="header-icon" href="./images/symbol-defs.svg#icon-envelop"></use>
+    </svg>
+    <span class="basket-value" id="valuebask">0</span>
+  </button>
+
+  <div class="header-overlay"></div>
+  <div class="container">
+    <div class="header-box">
+      <h1 class="header-title">FIND BEST EVENTS AROUND THE WORLD</h1>
+
+      <div class="post">
+        <form>
+          <input type="text" class="input" placeholder="Start searching" />
+          <button type="submit" class="button"><i class="fa fa-search"></i></button>
+        </form>
+        <form>
+          <select required class="input select-country">
+            <option value="" disabled selected hidden class="country-option">Choose country</option>
+          </select>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>

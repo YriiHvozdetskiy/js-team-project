@@ -1,0 +1,23 @@
+{{#each this}}
+  <li class='event-card hover'>
+    <div class='event-frame'></div>
+    <img
+      class='card-image'
+      src={{images.2.url}}
+      alt={{name}}
+      data-id={{id}}
+      data-author='{{name}}'
+    />
+    <div class='align'>
+      <p class='card-title' data-id={{id}}>{{name}}</p>
+      <p class='event-date'>{{dates.start.localDate}}</p>
+      {{#if _embedded.venues.0.name}}
+        <a class='event-location' target='_blank' href='https://www.google.com/maps/search/?api=1&query={{_embedded.venues.0.location.latitude}},{{_embedded.venues.0.location.longitude}}&query_place_id={{_embedded.venues.0.id}}'>
+          <i class='material-icons button__icon'> room </i>
+          {{_embedded.venues.0.name}}</a>
+      {{else}}
+        <a class='event-location' target='_blank' href='https://www.google.com/maps/search/?api=1&query={{_embedded.venues.0.location.latitude}},{{_embedded.venues.0.location.longitude}}&query_place_id={{_embedded.venues.0.id}}'>{{name}}</a>
+      {{/if}}
+    </div>
+  </li>
+{{/each}}
